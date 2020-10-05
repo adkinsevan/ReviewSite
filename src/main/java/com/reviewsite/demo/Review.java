@@ -13,6 +13,15 @@ public class Review {
     public String getAlbumName() {
         return albumName;
     }
+    public String getAlbumDescription(){
+        return albumDescription;
+    }
+    public String getAlbumReleaseDate(){
+        return albumReleaseDate;
+    }
+    public String getGenre(){
+        return genre;
+    }
 
     public Review(long id, String albumName, String albumDescription, String albumReleaseDate, String genre) {
         this.id = id;

@@ -1,5 +1,5 @@
-package com.reviewsite.demo;
-
+import com.reviewsite.demo.Review;
+import com.reviewsite.demo.ReviewRepository;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
