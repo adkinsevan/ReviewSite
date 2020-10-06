@@ -21,6 +21,7 @@ public class ReviewController {
 
     @RequestMapping("/review")
     public String findOneReview(@RequestParam(value = "id") long id, Model model) throws ReviewNotFoundException {
+
         if (reviewRepository.findReview(id) == null) {
             throw new ReviewNotFoundException();
         }
