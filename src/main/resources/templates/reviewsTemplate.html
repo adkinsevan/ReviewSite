@@ -2,17 +2,18 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>A List of All Available Reviews</title>
+    <title>Evan Adkins 3x3</title>
 </head>
+<link th:href="@{/css/staic.css/homepage.css}" rel="stylesheet"/>
 <body>
 
 <header>
-    <h1>A List of All Reviews</h1>
+    <h1>3x3</h1>
 </header>
 
 <main>
     <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.albumName}"></a></li>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"> <img src="${reviewModel.getImg}"> </a></li>
     </ul>
 </main>
 

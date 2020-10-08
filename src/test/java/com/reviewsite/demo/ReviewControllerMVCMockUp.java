@@ -59,7 +59,7 @@ public class ReviewControllerMVCMockUp {
                 Long reviewOneId = 1L;
                 when(reviewRepository.findReview(reviewOneId)).thenReturn(reviewOne);
                 mockMvc.perform(get("/review?id=1")).andExpect(status().isOk())
-                        .andExpect(view().name("courseTemplate"));
+                        .andExpect(view().name("reviewTemplate"));
         }
         @Test
         public void shouldFindOneReviewInTemplate() throws Exception{
