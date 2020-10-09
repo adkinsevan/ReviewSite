@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<link th:href="@{/css/staic.css/homepage.css}" rel="stylesheet"/>
+<link href="/css/homepage.css" rel="stylesheet"/>
 <head>
     <title>Evan Adkins 3x3</title>
 </head>
@@ -14,7 +14,7 @@
 
 <main>
     <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"> <img th:src="${review.getImgUrl()}"> </a></li>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"> <img th:src="${review.imgUrl}"> </a></li>
     </ul>
 </main>
 
