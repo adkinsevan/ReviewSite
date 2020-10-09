@@ -15,6 +15,7 @@
     <h2 th:text="${reviewModel.albumDescription}"></h2>
     <img th:src="${reviewModel.imgUrl}">
     <ul>
+        <li th:text="${reviewModel.getAlbumReview()}"></li>
         <li th:text="${reviewModel.getAlbumReleaseDate()}"></li>
         <li th:text="${reviewModel.getGenre()}"></li>
     </ul>

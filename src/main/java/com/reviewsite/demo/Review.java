@@ -12,22 +12,28 @@ public class Review {
     public Long getId() {
         return id;
     }
+
     public String getAlbumName() {
         return albumName;
     }
-    public String getAlbumDescription(){
+
+    public String getAlbumDescription() {
         return albumDescription;
     }
-    public String getAlbumReleaseDate(){
+
+    public String getAlbumReleaseDate() {
         return albumReleaseDate;
     }
-    public String getGenre(){
+
+    public String getGenre() {
         return genre;
     }
-    public String getImgUrl(){
+
+    public String getImgUrl() {
         return imgUrl;
     }
-    public String getAlbumReview(){
+
+    public String getAlbumReview() {
         return albumReview;
     }
 

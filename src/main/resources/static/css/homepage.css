@@ -1,0 +1,11 @@
+html{
+    background-color: #2B2D42;
+}
+
+img{
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+
+}
